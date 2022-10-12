@@ -29,7 +29,7 @@ class Pi_Detector():
                  conf_thres=0.25,
                  iou_thres=0.45,
                  max_det=1000,
-                 device='cuda:0'):
+                 device='cpu'):
         # load model weights
         self.device = select_device(device)
         self.model = DetectMultiBackend(weights, device=device, dnn=False, data=data, fp16=False)
