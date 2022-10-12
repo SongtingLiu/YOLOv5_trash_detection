@@ -1,0 +1,1 @@
+# YOLOv5_trash_detection
